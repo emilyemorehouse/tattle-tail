@@ -108,7 +108,7 @@ def main():
                 last_sent_time = current_time
 
                 # sending the push is in a process so that it won't...cause things to crash
-                p = Process(target=helpers.sendPush, args=(DefaultConfig.DOGNAME + "barked!",))
+                p = Process(target=helpers.sendPush, args=(DefaultConfig.DOGNAME + " barked!",))
                 p.start()
             else:
                 print("Loudness detected, push already sent", str(current_time), loudness)
