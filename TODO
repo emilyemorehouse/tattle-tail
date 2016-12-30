@@ -1,0 +1,13 @@
+- Add documentation on:
+	- Installation / Getting Started
+	- Dependencies
+	- Setting up OneSignal
+	- Setting up Firebase
+- Add calibration function
+- Add command line arguments for:
+	- Dev setting
+	- Calibration
+	- Custom configuration class (only uses DefaultConfig currently)
+- Add tests
+- Refactor code
+	- Handle stream and PyAudio closing gracefully
