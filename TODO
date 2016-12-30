@@ -9,5 +9,6 @@
 	- Calibration
 	- Custom configuration class (only uses DefaultConfig currently)
 - Add tests
+- Check PEP-8
 - Refactor code
 	- Handle stream and PyAudio closing gracefully
