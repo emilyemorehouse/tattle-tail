@@ -18,7 +18,7 @@ you wish to track your sessions and receive push notifications (respectively). F
 on setting these accounts up and retrieving your keys, check out the
 [Firebase section](#setting-up-firebase) and [OneSignal section](#setting-up-onesignal).
 
-Additionally, there is a [mobile app companion](github.com/emilyemorehouse/TattleTail.mobile) that registers
+Additionally, there is a [mobile app companion](https://github.com/emilyemorehouse/TattleTail.mobile) that registers
 your device for push notifications, allows you to view session details, and analyzes your dog's
 behavior.
 
