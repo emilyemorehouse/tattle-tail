@@ -33,6 +33,11 @@ def main():
                 # in raw_input when CTRL+C is pressed, and our signal handler is not re-entrant
                 signal.signal(signal.SIGINT, original_sigint)
 
+                # Gracefully close stream and PyAudio
+                stream.stop_stream()
+                stream.close()
+                p.terminate()
+
                 # Log session end and send push
                 helpers.logEvent(
                     sessions_endpoint + session['name'],
@@ -47,6 +52,11 @@ def main():
             # Restore the original signal handler as otherwise evil things will happen
             # in raw_input when CTRL+C is pressed, and our signal handler is not re-entrant
             signal.signal(signal.SIGINT, original_sigint)
+
+            # Gracefully close stream and PyAudio
+            stream.stop_stream()
+            stream.close()
+            p.terminate()
 
             # Log session end and send push
             helpers.logEvent(
