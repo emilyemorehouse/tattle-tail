@@ -10,12 +10,15 @@ def sendPush(message):
     payload = {"app_id": DefaultConfig.ONESIGNAL_APP_ID,
                "included_segments": ["All"],
                "contents": {"en": message}}
-    req = requests.post("https://onesignal.com/api/v1/notifications", headers=header, data=json.dumps(payload))
+    requests.post(
+        "https://onesignal.com/api/v1/notifications",
+        headers=header,
+        data=json.dumps(payload)
+    )
 
 
 def logEvent(endpoint, payload, id=None):
     if id:
-        req = requests.patch(DefaultConfig.FIREBASE_URL + endpoint + '.json', data=json.dumps(payload))
+        requests.patch(DefaultConfig.FIREBASE_URL + endpoint + '.json', data=json.dumps(payload))
     else:
-        req = requests.post(DefaultConfig.FIREBASE_URL + endpoint + '.json', data=json.dumps(payload))
-    return req.json()
+        requests.post(DefaultConfig.FIREBASE_URL + endpoint + '.json', data=json.dumps(payload))
