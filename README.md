@@ -13,7 +13,7 @@ always recommended).
 
 	$ pip install -r requirements.txt
 
-You will need a [Firebase](firebase.google.com) account and a [OneSignal](onesignal.com) account if
+You will need a [Firebase](https://firebase.google.com) account and a [OneSignal](https://onesignal.com) account if
 you wish to track your sessions and receive push notifications (respectively). For more information
 on setting these accounts up and retrieving your keys, check out the
 [Firebase section](#setting-up-firebase) and [OneSignal section](#setting-up-onesignal).
