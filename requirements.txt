@@ -1,4 +1,4 @@
-numpy==1.11.3
+numpy==1.21.0
 PyAudio==0.2.9
 -e git://github.com/mikexstudios/python-firebase.git@fc0597aafb1cb83c76e039370b1e0e180322f0e0#egg=python_firebase
 requests==2.12.4
